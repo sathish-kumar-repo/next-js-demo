@@ -1,4 +1,7 @@
 export default async function Para() {
+  // Wait for 5 seconds
+  await new Promise((resolve) => setTimeout(resolve, 50000));
+
   const res = await fetch("https://jsonplaceholder.typicode.com/users/1");
   const user = await res.json();
 
